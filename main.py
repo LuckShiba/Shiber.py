@@ -1,5 +1,4 @@
 from mongoengine import connect
-from os.path import split
 from discord.ext import commands
 from os import environ, walk
 from shiber.utils.prefix import get_prefix
