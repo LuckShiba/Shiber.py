@@ -1,2 +1,3 @@
 discord
 mongoengine
+requests
