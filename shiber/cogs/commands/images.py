@@ -13,7 +13,7 @@ class Images(Cog):
     def __init__(self, shiber):
         self.shiber = shiber
 
-    @command('shiba', aliases=['shibe'], description='Sends a random shibes image.')
+    @command('sh@iba', aliases=['shibe'], description='Sends a random shibes image.')
     async def shiba(self, ctx: Context):
         await ctx.send(embed=Embed(color=self.shiber.color)
                        .set_image(url=get_shibe_images()[0])

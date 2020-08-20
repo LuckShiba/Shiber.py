@@ -4,13 +4,9 @@ from discord.ext.commands import Cog, Context, CommandError, CommandNotFound, Mi
 from shiber.utils.help import help_embed
 
 
-class Events(Cog):
+class Error(Cog):
     def __init__(self, shiber):
         self.shiber = shiber
-
-    @Cog.listener()
-    async def on_ready(self):
-        print('Ready!')
 
     @Cog.listener()
     async def on_command_error(self, ctx: Context, error: CommandError):
@@ -35,4 +31,4 @@ class Events(Cog):
 
 
 def setup(shiber):
-    shiber.add_cog(Events(shiber))
+    shiber.add_cog(Error(shiber))
