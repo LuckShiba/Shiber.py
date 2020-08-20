@@ -16,7 +16,7 @@ class Message(Cog):
             await message.channel.send(embed=Embed(
                 color=self.shiber.color,
                 description=f'**Hello, {message.author.mention}.'
-                            f'Use `{get_prefix(message.guild)}help` to see my commands.'
+                            f'Use `{get_prefix(message.guild)}help` to see my commands.**'
             ))
         return
 
