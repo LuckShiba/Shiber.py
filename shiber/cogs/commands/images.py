@@ -13,13 +13,13 @@ class Images(Cog):
     def __init__(self, shiber):
         self.shiber = shiber
 
-    @command('sh@iba', aliases=['shibe'], description='Sends a random shibes image.')
+    @command(aliases=['shibe'], description='Sends a random shibes image.')
     async def shiba(self, ctx: Context):
         await ctx.send(embed=Embed(color=self.shiber.color)
                        .set_image(url=get_shibe_images()[0])
                        .set_footer(text='shibe.online'))
 
-    @command('bomb', aliases=['shibabomb', 'shibebomb'], description='Sends 5 random shibes images.')
+    @command(aliases=['shibabomb', 'shibebomb'], description='Sends 5 random shibes images.')
     async def bomb(self, ctx: Context):
         await ctx.send('\n'.join(get_shibe_images(5)))
 
