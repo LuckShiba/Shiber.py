@@ -8,7 +8,7 @@ class Info(Cog):
     def __init__(self, shiber):
         self.shiber = shiber
 
-    @command(description='Show my commands and information about then.', usage='[command name]')
+    @command(description='Show my commands and information about them.', usage='[command name]')
     async def help(self, ctx: Context, *, command_name=''):
         embed = Embed(color=self.shiber.color)
         if cmd := self.shiber.get_command(command_name):
